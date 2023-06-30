@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.20)
 
 project(k-NN LANGUAGES C)
 
 set(CMAKE_C_STANDARD 90)
 
-add_executable(k-NN main.c help.h help.c knn.h knn.c)
+add_executable(k-NN src/main.c src/help.h src/help.c src/knn.h src/knn.c)
 
 target_link_libraries(k-NN m)
 
